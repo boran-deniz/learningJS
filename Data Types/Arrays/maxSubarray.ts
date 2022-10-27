@@ -8,7 +8,7 @@ function getMaxSubSum(array: number[]): number {
             subArrays.push(array.slice(i, j));
         };
     };
-    
+
     let summedArrays = [];
     subArrays.forEach(function(y) {
         y = y.reduce(function (a, b){
