@@ -1,0 +1,13 @@
+function getCount(str) {
+    const vowels = ["a", "e", "i", "o", "u"];
+    let vowelCounter = 0;
+    let formattedStr = str.toLowerCase().replace(/\s/g, '');
+    for (i = 0; i <= formattedStr.length; i++) {
+      if (vowels.includes(formattedStr[i])){
+        vowelCounter += 1;
+      }
+    }
+    return vowelCounter;
+  }
+
+  console.log(getCount("abracadabra"))
